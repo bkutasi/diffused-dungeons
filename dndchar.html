@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Character Customizer</title>
+    <style>
+        #container {
+            display: flex;
+        }
+        #frame {
+            width: 1024px;
+            height: 768px;
+            border: 1px solid #000;
+        }
+        #options {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+		<form id="options" action="/submit" method="post">
+			<select name="option1">
+				<option value="">Race</option>
+				<option value="Human">Human</option>
+				<option value="Elf">Elf</option>
+				<option value="Dwarf">Dwarf</option>
+				<!-- Add more races here -->
+			</select>
+			<select name="option0">
+				<option value="">Body type</option>
+				<option value="Masculine">Masculine</option>
+				<option value="Feminine">Feminine</option>
+			</select>
+			<select name="option2">
+				<option value="">Class</option>
+				<option value="Warrior">Warrior</option>
+				<option value="(Mage):1.5">Mage</option>
+				<!-- Add more classes here -->
+			</select>
+			<select name="option3">
+				<option value="">Weapon</option>
+				<option value="Sword">Sword</option>
+				<option value="Bow">Bow</option>
+				<option value="Staff">Staff</option>
+				<!-- Add more weapons here -->
+			</select>
+			<select name="option4">
+				<option value="">Height</option>
+				<option value="Short">Short</option>
+				<option value="Average">Average</option>
+				<option value="Tall">Tall</option>
+				<!-- Add more heights here -->
+			</select>
+			<select name="option5">
+				<option value="">Body Type</option>
+				<option value="Slim Body">Slim</option>
+				<option value="Average Body">Average</option>
+				<option value="Muscular Body">Muscular</option>
+				<!-- Add more body types here -->
+			</select>
+			<select name="option6">
+				<option value="">Outfit</option>
+				<option value="Armor">Armor</option>
+				<option value="Robes">Robes</option>
+				<!-- Add more outfits here -->
+			</select>
+			<select name="option7">
+				<option value="">Facial Hair</option>
+				<option value="No faical hair">No facial hair</option>
+				<option value="Beard">Beard</option>
+				<option value="Moustache">Moustache</option>
+				<option value="Goatee">Goatee</option>
+				<!-- Add more facial hair styles here -->
+			</select>
+			<input type="submit" value="Submit">
+			<button type="button" id="random">Random</button>
+		</form>
+	<script src="submit_ws.js"></script>
+        <div id="frame"></div>
+    </div>
+</body>
+</html>
